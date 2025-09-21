@@ -4,53 +4,47 @@ In this phase, automation was implemented using approval processes and flows, an
 
 ---
 
-### 1. Approval Process – Discount Approval  
-- Created an **Approval Process** for Discount Approvals > 20%.  
-- Auto-routed such records to the Finance Team for review.  
-- Steps:  
-  - Entry Criteria: Requested Discount% > 20  
-  - Approver: Finance Team Queue  
-  - Final Action: Update Approval_Status__c = Approved/Rejected  
-- **Screenshot:**  
-  ![Approval Process](./screenshots4/01_approval_process.JPG)
+### 1. Flow – Auto Create Discount Approval  
+Flow: Record-Triggered Flow on Quote → Trigger: Created or Updated → Condition: Discount > 20%  
+Create record → Discount Approval → Fields:  
+- Quote → Triggering Quote ID  
+- Requested Discount % → Triggering Quote Discount  
+- Approval Status → Pending  
+**Screenshot:**  
+![Flow Setup](./screenshots4/01_discount_flow.JPG)
 
 ---
 
-### 2. Flow – Auto Update Approval Status  
-- Built a **Record-Triggered Flow** on Discount Approval.  
-- If discount ≤ 20%, auto-update status to **Approved**.  
-- Eliminates manual approvals for small discounts.  
-- **Screenshot:**  
-  ![Flow Setup](./screenshots4/02_flow_setup.JPG)
+### 2. Approval Process – Discount Approval  
+Approval Process: Jump Start Wizard  
+- Entry Criteria: Requested Discount % > 20  
+- Approver: Finance Manager (or your user if manager not available)  
+- Submitter → Discount Approval Owner  
+**Screenshot:**  
+![Approval Process](./screenshots4/02_approval_process.JPG)
 
 ---
 
-### 3. Test Flow Execution  
-- Created Discount Approvals with discount ≤ 20%.  
-- Verified status auto-changes to **Approved**.  
-- **Screenshot:**  
-  ![Flow Test](./screenshots4/03_flow_test.JPG)
+### 3. Validation Rule – Invoice Due Date  
+Rule: Due Date must be after Invoice Date  
+**Screenshot:**  
+![Validation Rule](./screenshots4/03_validation_rule.JPG)
 
 ---
 
 ### 4. Report – Discount Approvals by Status  
-- Built a **Custom Report** showing:  
-  - Pending Approvals  
-  - Approved Approvals  
-  - Rejected Approvals  
-- Helps management track approval bottlenecks.  
-- **Screenshot:**  
-  ![Discount Report](./screenshots4/04_discount_report.JPG)
+Report to track Pending / Approved / Rejected discounts  
+**Screenshot:**  
+![Discount Report](./screenshots4/04_discount_report.JPG)
 
 ---
 
-### 5. Dashboard – Approval Summary  
-- Added a **Dashboard** with charts for Discount Approvals.  
-- Visualized approval distribution across team members.  
-- **Screenshot:**  
-  ![Approval Dashboard](./screenshots4/05_approval_dashboard.JPG)
+### 5. Dashboard – RevenueOps Summary  
+Dashboard showing total Invoices, Pending Approvals, Paid Invoices  
+Charts grouped by Approval Status  
+**Screenshot:**  
+![Approval Dashboard](./screenshots4/05_dashboard_summary.JPG)
 
 ---
 
-
-✅ **End of Phase 4 Documentation**  
+✅ **End of Phase 4 Documentation**

@@ -18,7 +18,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Save.  
 
 **Screenshot:**  
-![Invoice Object Details](./screenshots3/01_invoice_object.jpg)
+![Invoice Object Details](./screenshots3/01_invoice_object.JPG)
 
 ---
 
@@ -32,7 +32,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Status → Picklist (`Draft`, `Sent`, `Paid`, `Overdue`)  
 
 **Screenshot:**  
-![Invoice Fields](./screenshots3/02_invoice_fields.jpg)
+![Invoice Fields](./screenshots3/02_invoice_fields.JPG)
 
 ---
 
@@ -44,7 +44,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Master-Detail → Invoice to Order  
 
 **Screenshot:**  
-![Invoice Relationships](./screenshots3/03_invoice_relationships.jpg)
+![Invoice Relationships](./screenshots3/03_invoice_relationships.JPG)
 
 ---
 
@@ -57,7 +57,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - App Manager → Edit **RevenueOpsApp** → Add Invoice tab to navigation → Save  
 
 **Screenshot:**  
-![Invoice Tab](./screenshots3/04_invoice_tab.jpg)
+![Invoice Tab](./screenshots3/04_invoice_tab.JPG)
 
 ---
 
@@ -72,7 +72,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Enable Reports and Activities  
 
 **Screenshot:**  
-![Payment Object](./screenshots3/05_payment_object.jpg)
+![Payment Object](./screenshots3/05_payment_object.JPG)
 
 ---
 
@@ -84,7 +84,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Related Invoice → Lookup (`Invoice__c`)  
 
 **Screenshot:**  
-![Payment Relationship](./screenshots3/06_payment_relationship.jpg)
+![Payment Relationship](./screenshots3/06_payment_relationship.JPG)
 
 ---
 
@@ -95,7 +95,7 @@ In Phase 3 we built two custom objects (`Invoice__c` and `Payment__c`), added fi
 - Verify that Invoice shows related Payments under its related list.  
 
 **Screenshot:**  
-![Test Invoice with Payment](./screenshots3/07_test_invoice_payment.jpg)
+![Test Invoice with Payment](./screenshots3/07_test_invoice_payment.JPG)
 
 ---
 
