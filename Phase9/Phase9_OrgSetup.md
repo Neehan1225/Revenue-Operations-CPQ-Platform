@@ -9,7 +9,7 @@ This phase ensures proper access control for Finance users and managers in **Rev
 - **Navigate:** Setup → Profiles → Finance User  
 - **Verify:** Full access to **Quotes**, restricted access elsewhere.  
 - **Screenshot:**  
-  ![Finance User Profile](./screenshots/09a_finance_profile.JPG)  
+  ![Finance User Profile](./screenshots/09_finance_profile_header.JPG)  
 
 ---
 
